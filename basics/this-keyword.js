@@ -17,8 +17,6 @@ var user = {
     getThis: function () {
         console.log('Linha 14, dentro de um objeto, o this retorna:', this);
     }
-
-    
 }
 
 user.getThis()

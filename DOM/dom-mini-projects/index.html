@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<style>
+    body{
+        text-align: left;
+        box-sizing: border-box;
+    }
+    p{
+        width: 50%;
+        border: 2px solid black;
+        padding: .5em;
+        
+    }
+</style>
+<body>
+    <div>
+        <h1 class="title">LeanrCodeOnline.in</h1>
+        <h1>header 2 for exemple</h1>
+    </div>
+
+    <p>
+        Apenas mostrando como achar elementos com DOMjs
+        As duas principais formas de achar um elementos é: <br> <br>
+        -querySelector <br>
+        -getElementsBy
+    </p>
+
+    <p>no exemlo, no document.getElemtsByTagName, é importante frizar que 
+    ele ira pegar TODOS os elementos h1 (como só tem um no exemlo fica facil),
+    dessa forma, para escolher qual h1 exatamente, vc usa index notation,
+    e para pegar o conteudo dentro da tag, usa o innerHTML ou innerText.
+    </p>
+
+    <p>caso nao use o index notation e innerHTML/innerText, o console retorna um: HTMLcollection,
+        onde tem varios "metodos" la dentro, que um deles é um innerHTML por exemlo.
+    </p>
+</body>
+</html>
