@@ -7,13 +7,32 @@ const pink = document.querySelector(".pink");
 const center = document.querySelector(".center")
 
 
-//o window oject e enome, com ele vc pode pegar valores de css dos elementos
+//o window oject e enorme, com ele vc pode pegar valores de css dos elementos
 // um exemplo: window.getComputedStyle(violet).backgroundColor; pega o background-color
-//se a propriedade que vc quer tiver ifem, substitua por camelCase
-
-
+//se a propriedade que vc quer tiver ifem, substitua por escrita camelCase
 const getBackGroundColor = (selectedColor) => {
     return window.getComputedStyle(selectedColor).backgroundColor;
 }
- 
-console.log(getBackGroundColor(red));
+var redElementColor = getBackGroundColor(red);
+
+/*o metodo addEventListener recebe 2 argumentos, o primeiro é qual evento vc vai usar
+o segundo o é uma call back function dizendo que deve ser feito */
+red.addEventListener('mouseenter', () => {
+    center.style.backgroundColor = redElementColor;
+})
+
+cyan.addEventListener('mouseenter', () => {
+    center.style.backgroundColor = redElementColor;
+})
+
+violet.addEventListener('mouseenter', () => {
+    center.style.backgroundColor = redElementColor;
+})
+
+orange.addEventListener('mouseenter', () => {
+    center.style.backgroundColor = redElementColor;
+})
+
+pink.addEventListener('mouseenter', () => {
+    center.style.backgroundColor = redElementColor;
+})
